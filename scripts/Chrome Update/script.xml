@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<script>
+   <name>Chrome Update</name>
+   <category>Browsers</category>
+   <info>Chrome Update</info>
+   <notes/>
+   <priority>After</priority>
+   <parameters/>
+   <os_requirements/>
+   <script_contents/>
+</script>

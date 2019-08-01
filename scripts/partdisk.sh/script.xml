@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<script>
+   <name>partdisk.sh</name>
+   <category>prefs</category>
+   <info/>
+   <notes/>
+   <priority>Before</priority>
+   <parameters/>
+   <os_requirements/>
+   <script_contents/>
+</script>

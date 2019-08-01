@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<script>
+   <name>G_ash.mav.sh</name>
+   <category>Admin Tools</category>
+   <info/>
+   <notes/>
+   <priority>At Reboot</priority>
+   <parameters/>
+   <os_requirements/>
+   <script_contents/>
+</script>
