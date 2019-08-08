@@ -3,8 +3,11 @@
 # 10/23/17
 # asnyder@nfv.k12.ia.us
 
-sudo jamf policy -event depnotify
+sudo jamf policy -event nomad
 
+killall -HUP loginwindow
+
+sudo jamf policy -event depnotify
 
 # Wait for user to be logged in
 
@@ -15,7 +18,6 @@ while [ "$dockStatus" == "" ]; do
   sleep 2
   dockStatus=$(pgrep -x Dock)
 done
-
 
 # Call DEPNotify
 
@@ -88,7 +90,7 @@ sudo jamf policy -event firefox
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 echo "Status: Installing Google Chrome" >> /var/tmp/depnotify.log
-sudo jamf policy -event chrome 
+sudo jamf policy -event chrome
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 #install office #
@@ -103,7 +105,7 @@ echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Adobe Reader #
 echo "Status: Installing Adobe Reader" >> /var/tmp/depnotify.log
-sudo jamf policy -event adobereader 
+sudo jamf policy -event adobereader
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 ################################
 #
@@ -114,12 +116,12 @@ echo "Status: Installing Plugins" >> /var/tmp/depnotify.log
 
 #Install Shockwave #
 echo "Status: Installing Shockwave" >> /var/tmp/depnotify.log
-sudo jamf policy -event shockwave 
+sudo jamf policy -event shockwave
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 #Install Flash #
 echo "Status: Installing Flash" >> /var/tmp/depnotify.log
-sudo jamf policy -event flash 
+sudo jamf policy -event flash
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Java #
