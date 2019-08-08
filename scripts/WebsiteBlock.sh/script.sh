@@ -5,7 +5,6 @@
 # https://www.jamf.com/jamf-nation/discussions/18184/how-to-update-host-file-via-composer
 #
 # Use Jamf Script Parameter 4 for domain (youtube.com) and 5 for subdomain (images.google.com) and 6 for file (/etc/hosts)
-#test
 # Set base variables
 domain=""
 subdomain=""
