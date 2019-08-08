@@ -5,7 +5,7 @@
 # https://www.jamf.com/jamf-nation/discussions/18184/how-to-update-host-file-via-composer
 #
 # Use Jamf Script Parameter 4 for domain (youtube.com) and 5 for subdomain (images.google.com) and 6 for file (/etc/hosts)
-
+#test
 # Set base variables
 domain=""
 subdomain=""
@@ -13,8 +13,8 @@ filename=""
 SUCCESS=0
 
 # Setup Jamf variables
-if [ "$4" != "" ] && [ "$domain" = "" ] 
-   then 
+if [ "$4" != "" ] && [ "$domain" = "" ]
+   then
     domain="$4"
 fi
 
@@ -22,7 +22,7 @@ if [ "$4" = "" ] && [ "$domain" = "" ]
     then
         echo "No Domain Variable Configured"
         exit 1
-fi      
+fi
 
 if [ "$5" != "" ] && [ "$subdomain" = "" ]
     then subdomain="$5"
@@ -47,14 +47,14 @@ fi
 if [ "$subdomain" = "" ]
     then
         needle="$domain"
-    else 
+    else
         needle="$subdomain.$domain"
-fi      
+fi
 # set hostline variable
 hostline="127.0.0.1 $needle"
 
 # Determine if the line already exists in /etc/hosts
-grep -q "$needle" "$filename"  
+grep -q "$needle" "$filename"
 
 # Grep's return error code can then be checked.
 if [ $? -eq $SUCCESS ]
