@@ -1,6 +1,6 @@
 #!/bin/bash
 # NFV First Run DEP Script
-# 2/4/19
+# 8/14/19
 # asnyder@nfv.k12.ia.us
 
 sudo jamf policy -event nomad
