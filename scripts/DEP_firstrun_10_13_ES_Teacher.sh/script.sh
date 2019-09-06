@@ -63,6 +63,7 @@ echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 # Install Lanschool Teacher
 echo "Status: Installing Lanschool Teacher" >> /var/tmp/depnotify.log
 sudo jamf policy -event lanschoolteacher
+sudo pkill [Tt]eacher
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 echo "Status: Installing Admin Tools" >> /var/tmp/depnotify.log
@@ -141,7 +142,6 @@ echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 #
 #
 ################################
-sudo pkill [Tt]eacher
 # Install HP Printers #
 echo "Status: Installing Printer Drivers" >> /var/tmp/depnotify.log
 #sudo jamf policy -event esprinter
