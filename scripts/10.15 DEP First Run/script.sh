@@ -3,11 +3,11 @@
 # 11/1/19
 # asnyder@nfv.k12.ia.us
 
-sudo jamf policy -event nomad
+jamf policy -event nomad
 
 killall -HUP loginwindow
 
-sudo jamf policy -event depnotify
+jamf policy -event depnotify
 
 # Wait for user to be logged in
 
@@ -23,25 +23,25 @@ done
 /Applications/Utilities/DEPNotify.app/Contents/MacOS/DEPNotify -fullScreen -jamf &>/dev/null &
 
 # set computer name
-sudo jamf policy -event setname
+jamf policy -event setname
 
 # Enable ARD and hide <500 users
-sudo jamf policy -event hide500
+jamf policy -event hide500
 
-sudo jamf policy -event ARD
+jamf policy -event ARD
 
 # Set Preferences
-sudo jamf policy -event addprint
-sudo jamf policy -event settz
-sudo jamf policy -event security
-sudo jamf policy -event dockutil
+jamf policy -event addprint
+jamf policy -event settz
+jamf policy -event security
+jamf policy -event dockutil
 
 # Install Lanschool
-sudo jamf policy -event hslanschool
+jamf policy -event hslanschool
 
 # Install Bit Bar
-sudo jamf policy -event bitbar
-sudo jamf recon
+jamf policy -event bitbar
+jamf recon
 
 sleep 10
 
