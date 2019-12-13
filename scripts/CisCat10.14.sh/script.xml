@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<script>
+   <name>cis-cat-10.14.sh</name>
+   <category>Security</category>
+   <info/>
+   <notes/>
+   <priority>After</priority>
+   <parameters/>
+   <os_requirements/>
+   <script_contents/>
+</script>
