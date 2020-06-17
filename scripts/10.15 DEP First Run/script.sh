@@ -5,7 +5,7 @@
 
 jamf policy -event nomad
 
-killall -HUP loginwindow
+# killall -HUP loginwindow
 
 jamf policy -event depnotify
 
