@@ -55,7 +55,6 @@ echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 sudo jamf policy -event addprint
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
-sudo jamf policy -event settz
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 ####################################
@@ -76,7 +75,6 @@ sudo jamf policy -event iboss
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install cocoa
-#sudo jamf policy -event cocoa
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Bit Bar
@@ -107,51 +105,41 @@ echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # install audacity
 echo "Status: Installing Audacity" >> /var/tmp/depnotify.log
-sudo jamf policy -event audacity
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 echo "Status: Installing Audacity Plugins" >> /var/tmp/depnotify.log
-sudo jamf policy -event audacitylame
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Digital Editions
 echo "Status: Installing Digital Editions" >> /var/tmp/depnotify.log
-sudo jamf policy -event digitaleditions
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install VLC
 echo "Status: Installing VLC" >> /var/tmp/depnotify.log
-sudo jamf policy -event vlc
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Adobe Reader
 echo "Status: Installing Adobe Reader" >> /var/tmp/depnotify.log
-sudo jamf policy -event adobereader
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Dropbox
 echo "Status: Installing Dropbox" >> /var/tmp/depnotify.log
-#sudo jamf policy -event dropbox
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install GIMP
 echo "Status: Installing GIMP" >> /var/tmp/depnotify.log
-sudo jamf policy -event gimp
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Hackety Hack
 echo "Status: Installing Hackety Hack" >> /var/tmp/depnotify.log
-#sudo jamf policy -event hacketyhack
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Google Earth
 echo "Status: Installing Google Earth" >> /var/tmp/depnotify.log
-sudo jamf policy -event googleearth
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Inspiration
 echo "Status: Installing inspiration" >> /var/tmp/depnotify.log
-sudo jamf policy -event inspiration
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 #install Lockdown browser
@@ -161,7 +149,6 @@ echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install MuseScore
 echo "Status: Installing MuseScore" >> /var/tmp/depnotify.log
-sudo jamf policy -event musescore
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Logger
@@ -173,7 +160,6 @@ echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Type to Learn 4
 echo "Status: Installing Type to Learn 4" >> /var/tmp/depnotify.log
-#sudo jamf policy -event typetolearn
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 ################################
@@ -185,22 +171,18 @@ echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 #Install Shockwave
 echo "Status: Installing Shockwave" >> /var/tmp/depnotify.log
-sudo jamf policy -event shockwave
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 #Install Flash
 echo "Status: Installing Flash" >> /var/tmp/depnotify.log
-sudo jamf policy -event flash
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Java
 echo "Status: Installing Java" >> /var/tmp/depnotify.log
-sudo jamf policy -event java
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Silverlight
 echo "Status: Installing Silverlight" >> /var/tmp/depnotify.log
-sudo jamf policy -event silverlight
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 sudo pkill "Adobe Digital Editions"
 ################################
