@@ -1,6 +1,6 @@
 #!/bin/bash
 # NFV First Run DEP Script
-# 6/12/19
+# 6/22/20
 # asnyder@nfv.k12.ia.us
 
 sudo jamf policy -event nomad
@@ -62,14 +62,13 @@ echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 
 # Install Lanschool Teacher
-echo "Status: Installing LanSchool Teacher - TRACY EDITED THIS SCRIPT" >> /var/tmp/depnotify.log
+echo "Status: Installing LanSchool Teacher" >> /var/tmp/depnotify.log
 sudo jamf policy -event lanschoolteacher
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 echo "Status: Installing Admin Tools" >> /var/tmp/depnotify.log
 
 # Install cocoa
-sudo jamf policy -event cocoa
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Bit Bar
@@ -103,75 +102,45 @@ sudo jamf policy -event office16
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # install audacity #
-echo "Status: Installing Audacity" >> /var/tmp/depnotify.log
-sudo jamf policy -event audacity
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
-
-echo "Status: Installing Audacity Plugins" >> /var/tmp/depnotify.log
-sudo jamf policy -event audacitylame
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Digital Editions #
-echo "Status: Installing Adobe Digital Editions" >> /var/tmp/depnotify.log
-sudo jamf policy -event digitaleditions	
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Skype #
-echo "Status: Installing Skype" >> /var/tmp/depnotify.log
-sudo jamf policy -event skype
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install VLC #
-echo "Status: Installing VLC Media Player" >> /var/tmp/depnotify.log
-sudo jamf policy -event vlc
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Adobe Reader #
-echo "Status: Installing Adobe Reader" >> /var/tmp/depnotify.log
-sudo jamf policy -event adobereader 
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Dropbox #
-echo "Status: Installing Dropbox" >> /var/tmp/depnotify.log
-sudo jamf policy -event dropbox
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install GIMP #
-echo "Status: Installing Gimp" >> /var/tmp/depnotify.log
-sudo jamf policy -event gimp
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Hackety Hack #
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Google Earth #
-echo "Status: Installing Google Earth" >> /var/tmp/depnotify.log
-sudo jamf policy -event googleearth
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Inspiration #
-echo "Status: Installing Inspiration" >> /var/tmp/depnotify.log
-sudo jamf policy -event inspiration
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install kidspiration #
-echo "Status: Installing Kidspiration" >> /var/tmp/depnotify.log
-sudo jamf policy -event kidspiration
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 #install Lockdown browser #
-echo "Status: Installing Lockdown Browser" >> /var/tmp/depnotify.log 
-sudo jamf policy -event lockdownbrowser
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install MuseScore #
-echo "Status: Installing MuseScore" >> /var/tmp/depnotify.log
-sudo jamf policy -event musescore
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
-#############    WE NEED SKETCHUP IN HERE STILL ##############################
-
-# Install Type to Learn 4 #
 #echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 ################################
@@ -184,22 +153,18 @@ sleep 3
 
 #Install Shockwave #
 echo "Status: Installing Shockwave" >> /var/tmp/depnotify.log
-sudo jamf policy -event shockwave 
+
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 #Install Flash #
-echo "Status: Installing Flash" >> /var/tmp/depnotify.log
-sudo jamf policy -event flash 
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Java #
-echo "Status: Installing Java" >> /var/tmp/depnotify.log
-sudo jamf policy -event java
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Silverlight #
 echo "Status: Installing Silverlight" >> /var/tmp/depnotify.log
-sudo jamf policy -event silverlight
+
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 
@@ -220,20 +185,17 @@ echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 #echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Konica Drivers
-echo "Status: Installing Elementary Konica Minolta Printer" >> /var/tmp/depnotify.log
-sudo jamf policy -event valleyesprinter
+
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
-echo "Status: Installing Middle School Konica Minolta Printer" >> /var/tmp/depnotify.log
-sudo jamf policy -event valleymsprinter
+
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
-echo "Status: Installing Admin Konica Minolta Printer" >> /var/tmp/depnotify.log
-sudo jamf policy -event valleyadminprinter
+
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 sudo pkill [Tt]eacher
-sudo pkill "Adobe Digital Editions"
+
 echo "Status: Updating Computer Record" >> /var/tmp/depnotify.log
 sudo jamf recon
 
