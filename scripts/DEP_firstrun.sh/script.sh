@@ -54,8 +54,8 @@ echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 #sudo jamf policy -event iboss
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 # Install cocoa
-echo "Status: Installing Cocoa" >> /var/tmp/deponotify.log
-sudo jamf policy -event cocoa
+echo "Status: Installing Munki" >> /var/tmp/deponotify.log
+sudo jamf policy -event munki
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 # Install Bit Bar
 echo "Status: Installing BitBar" >> /var/tmp/deponotify.log
