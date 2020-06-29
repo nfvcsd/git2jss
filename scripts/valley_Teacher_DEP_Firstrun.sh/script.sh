@@ -70,7 +70,7 @@ echo "Status: Installing Admin Tools" >> /var/tmp/depnotify.log
 
 # Install cocoa
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
-
+sudo jamf policy -event munki
 # Install Bit Bar
 sudo jamf policy -event bitbar
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
