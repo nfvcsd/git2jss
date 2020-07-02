@@ -59,9 +59,9 @@ echo "Status: Installing Administrator Tools" >> /var/tmp/depnotify.log
 sudo jamf policy -event lanschoolteacher
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
-# Install cocoa
+# Install munki
 
-sudo jamf policy -event cocoa
+sudo jamf policy -event munki
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 # Install Bit Bar
 
@@ -95,7 +95,7 @@ sudo jamf policy -event vlc
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 # Install Adobe Reader #
 echo "Status: Installing Adobe Reader" >> /var/tmp/depnotify.log
-sudo jamf policy -event adobereader 
+# sudo jamf policy -event adobereader 
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 ################################
 #
@@ -108,22 +108,22 @@ echo "Status: Installing Browser Plugins" >> /var/tmp/depnotify.log
 
 #Install Shockwave #
 echo "Status: Installing Shockwave" >> /var/tmp/depnotify.log
-sudo jamf policy -event shockwave 
+# sudo jamf policy -event shockwave 
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 #Install Flash #
 echo "Status: Installing Flash" >> /var/tmp/depnotify.log
-sudo jamf policy -event flash 
+# sudo jamf policy -event flash 
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Java #
 echo "Status: Installing Java" >> /var/tmp/depnotify.log
-sudo jamf policy -event java
+# sudo jamf policy -event java
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 
 # Install Silverlight #
 echo "Status: Installing Silverlight" >> /var/tmp/depnotify.log
-sudo jamf policy -event silverlight
+# sudo jamf policy -event silverlight
 echo "Command: DeterminateManualStep:" >> /var/tmp/depnotify.log
 ################################
 #
