@@ -36,5 +36,7 @@ for i in "${folders_a[@]}"; do
         rm -rf "${filepath}"
     fi
 done
+# remove receipts
+find /var/db/receipts -type f -name "*corel*" -delete
 
 exit 0
