@@ -17,6 +17,7 @@ apps_a[2]="Corel Font Manager 2020.app"
 declare -a folders_a
 folders_a[0]="/Library/Application Support/Corel"
 folders_a[1]="/users/${loggedInUser}/Library/Application Support/Corel"
+folders_a[2]="/Library/Corel"
 # loop through apps
 for i in "${apps_a[@]}"; do
     filepath="/Applications/CorelDraw Graphics Suite 2020/${i}"
