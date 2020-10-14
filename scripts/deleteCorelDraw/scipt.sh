@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 #
 #
 # This script is used to uninstall components of Corel Draw when
