@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <script>
-   <name>DEP_firstrun_10_13_ES_Teacher.sh</name>
-   <category>10.12 prestage</category>
+   <name>Staff First Run</name>
+   <category>AAA-Prestage First Runs</category>
    <info/>
    <notes/>
    <priority>After</priority>
