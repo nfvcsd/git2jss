@@ -41,7 +41,7 @@ for i in ${installs[@]}; do
     echo "Status: Installing ${i}" >> /var/tmp/deponotify.log
     jamf policy -event ${i}
     echo "Command: DeterminateManualStep" >> /var/tmp/deponotify.log
-
+done
 echo "Status: Updating Computer Record" >> /var/tmp/depnotify.log
 sudo jamf recon
 
