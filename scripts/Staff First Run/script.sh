@@ -43,7 +43,7 @@ for i in ${installs[@]}; do
     echo "Command: DeterminateManualStep" >> /var/tmp/depnotify.log
 done
 echo "Status: Updating Computer Record" >> /var/tmp/depnotify.log
-sudo jamf recon
-
+jamf recon
+jamf policy
 # Remove DEPNotify Log
 echo "Command: Restart: Your computer will now restart." >> /var/tmp/depnotify.log
