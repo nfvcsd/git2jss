@@ -21,9 +21,9 @@ sudo jamf policy -event nomad
 
 # Wait for user to be logged in
 dockStatus=$(pgrep -x Dock)
-log "Waiting for Desktop"
+echo "Waiting for Desktop"
 while [ "$dockStatus" == "" ]; do
-  log "Desktop is not loaded. Waiting."
+  echo "Desktop is not loaded. Waiting."
   sleep 2
   dockStatus=$(pgrep -x Dock)
 done
