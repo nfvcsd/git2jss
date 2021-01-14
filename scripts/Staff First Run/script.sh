@@ -38,9 +38,9 @@ echo "Command: DeterminateManual: ${#installs[@]}" >> /var/tmp/depnotify.log
 echo "Command: KillCommandFile:" >> /var/tmp/depnotify.log
 # Loop over installs array and install items
 for i in ${installs[@]}; do
-    echo "Status: Installing ${i}" >> /var/tmp/deponotify.log
+    echo "Status: Installing ${i}" >> /var/tmp/depnotify.log
     jamf policy -event ${i}
-    echo "Command: DeterminateManualStep" >> /var/tmp/deponotify.log
+    echo "Command: DeterminateManualStep" >> /var/tmp/depnotify.log
 done
 echo "Status: Updating Computer Record" >> /var/tmp/depnotify.log
 sudo jamf recon
