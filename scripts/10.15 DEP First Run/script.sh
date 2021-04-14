@@ -1,6 +1,6 @@
 #!/bin/bash
 # NFV First Run DEP Script
-# 11/1/19
+# 4/14/21
 # asnyder@nfv.k12.ia.us
 
 arch=$(/usr/bin/arch)
