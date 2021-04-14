@@ -13,14 +13,6 @@ else
     echo "Unknown Architecture"
 fi
 
-jamf policy -event nomad
-
-# killall -HUP loginwindow
-
-jamf policy -event depnotify
-
-# Wait for user to be logged in
-
 dockStatus=$(pgrep -x Dock)
 log "Waiting for Desktop"
 while [ "$dockStatus" == "" ]; do
@@ -46,12 +38,16 @@ jamf policy -event settz
 jamf policy -event security
 jamf policy -event dockutil
 
-# Install Lanschool
-jamf policy -event hslanschool
 
 # Install Bit Bar
 jamf policy -event bitbar
 jamf recon
+
+jamf policy
+
+jamf policy
+
+jamf policy
 
 sleep 10
 
