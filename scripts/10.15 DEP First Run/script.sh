@@ -23,7 +23,7 @@ done
 
 # Call DEPNotify
 /Applications/Utilities/DEPNotify.app/Contents/MacOS/DEPNotify -fullScreen -jamf &>/dev/null &
-
+/usr/local/munki/bin/managedsoftwareupdate -a
 # set computer name
 jamf policy -event setname
 
