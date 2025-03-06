@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/opt/nfv/bin/python3.8
 import getpass
 import requests
 from xml.etree import ElementTree as ET
@@ -227,7 +227,7 @@ if __name__ == "__main__":
     # Ask for password if not supplied via command line args
     if args.password:
         password = args.password
-    elif password is None:
+    else:
         password = getpass.getpass()
 
     if args.export_path:
