@@ -1,7 +1,9 @@
 #!/bin/sh
-lastUser=`defaults read /Library/Preferences/com.apple.loginwindow lastUserName`
+lastUser=`/usr/bin/last -1 -t console | awk '{print $1}'`
 
-if [ $lastUser == "" ]; then
-	echo "<result>No logins</result>"
+if [ $lastUser == "wtmp" ]; then
+echo "<result>No logins</result>"
 else
-	echo "<result>$lastUser</result>"
+echo "<result>$lastUser</result>"
+fi
+	
