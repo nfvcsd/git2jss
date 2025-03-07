@@ -1,0 +1,4 @@
+#!/bin/bash
+# /Library/Application\ Support/SMART\ Technologies/Activation\ Wizard.app/Contents/MacOS/Activation\ Wizard --puid notebook_14 --uipack notebook_10 --m=4 --v=4 --pks "NC-2ACSE-AEKHA-U7A6A-ANAAA-AAA" --a --auto-renew
+# /Library/Application\ Support/SMART\ Technologies/Activation\ Wizard\ 2.app/Contents/MacOS/Activation\ Wizard --puid=notebook_14 --uipack=notebook_10 --m=4 --v=5 --pks "NC-2ACSE-AEKHA-U7A6A-ANAAA-AAA" --a
+/Library/Application\ Support/SMART\ Technologies/Activation\ Wizard\ 2.app/Contents/MacOS/Activation\ Wizard\ 2 --puid=notebook_14 --uipack=notebook_10 --m=4 --v=5 --pks "NC-2ACSE-AEKHA-U7A6A-ANAAA-AAA" --a

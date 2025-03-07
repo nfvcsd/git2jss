@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<script>
+   <name>jamJAR</name>
+   <category>Admin Tools</category>
+   <info/>
+   <notes/>
+   <priority>After</priority>
+   <parameters>
+      <parameter4>Add to Installs</parameter4>
+      <parameter5>Remove From Installs</parameter5>
+      <parameter6>Add to Uninstalls</parameter6>
+      <parameter7>Remove From uninstalls</parameter7>
+      <parameter8>YOLO mode = ENGAGE</parameter8>
+   </parameters>
+   <os_requirements/>
+   <script_contents/>
+</script>

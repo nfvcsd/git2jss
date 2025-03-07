@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<script>
+   <name>Sequoia_nfv_sequoia_compliance.sh</name>
+   <category>Sequoia_NFV_Sequoia</category>
+   <info/>
+   <notes/>
+   <priority>After</priority>
+   <parameters/>
+   <os_requirements/>
+   <script_contents/>
+</script>

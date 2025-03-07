@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<computer_extension_attribute>
+   <name>Last SoftwareUpdate Check</name>
+   <enabled>true</enabled>
+   <description>Checks for the last time a software update was checked.</description>
+   <data_type>Date</data_type>
+   <input_type>
+      <type>script</type>
+      <platform>Mac</platform>
+      <script/>
+   </input_type>
+   <inventory_display>General</inventory_display>
+</computer_extension_attribute>
