@@ -418,7 +418,7 @@ async def get_existing_categories(session, url, user, passwd, semaphore):
         "Authorization": "Bearer " + token,
     }
     async with semaphore:
-        with async_timeout.timeout(args.timeout):
+        async with async_timeout.timeout(args.timeout):
             async with session.get(
                 url + "/JSSResource/categories", headers=headers
             ) as resp:
