@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <computer_extension_attribute>
    <name>Nudge Version</name>
-   <enabled>true</enabled>
+   <enabled>false</enabled>
    <description/>
    <data_type>String</data_type>
    <input_type>
