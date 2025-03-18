@@ -250,7 +250,7 @@ async def get_ea_template(session, url, user, passwd, ext_attr):
         ) as file:
             template = ET.fromstring(file.read())
     except IndexError:
-        with async_timeout.timeout(args.timeout):
+        async with async_timeout.timeout(args.timeout):
             headers = {
                 "Accept": "application/xml",
                 "Content-Type": "application/xml",
@@ -332,7 +332,7 @@ async def upload_script(session, url, user, passwd, script, semaphore):
     with open(join(sync_path, "scripts", script, script_file[0]), "r") as f:
         data = f.read()
     async with semaphore:
-        with async_timeout.timeout(args.timeout):
+        async with async_timeout.timeout(args.timeout):
             template = await get_script_template(session, url, user, passwd, script)
             async with session.get(
                 url + "/JSSResource/scripts/name/" + template.find("name").text,
@@ -371,7 +371,7 @@ async def get_script_template(session, url, user, passwd, script):
         with open(join(sync_path, "scripts", script, xml_file[0]), "r") as file:
             template = ET.fromstring(file.read())
     except IndexError:
-        with async_timeout.timeout(args.timeout):
+        async with async_timeout.timeout(args.timeout):
             headers = {
                 "Accept": "application/xml",
                 "Content-Type": "application/xml",
