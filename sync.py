@@ -197,7 +197,7 @@ async def upload_extension_attribute(session, url, user, passwd, ext_attr, semap
         ) as f:
             data = f.read()
     async with semaphore:
-        with async_timeout.timeout(args.timeout):
+        async with async_timeout.timeout(args.timeout):
             template = await get_ea_template(session, url, user, passwd, ext_attr)
             async with session.get(
                 url
